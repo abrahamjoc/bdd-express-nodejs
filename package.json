@@ -1,0 +1,32 @@
+{
+  "name": "node-base",
+  "version": "1.0.0",
+  "description": "Base Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test-windows": "set NODE_ENV=test&& mocha --slow 1000 --exit \\\"./{,!(node_modules)/**/}*.spec.js\\\""
+  },
+  "author": "Jose Abraham <abrahamjoc@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^6.10.0",
+    "cors": "^2.8.5",
+    "directory-tree": "^2.2.3",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "ip": "^1.1.5",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.1",
+    "promise-mysql": "^3.3.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "faker": "^4.1.0",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.0",
+    "supertest": "^4.0.2"
+  }
+}
